@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { Field as FormikField } from 'formik';
 
-export const Input = styled.input`
+export const Field = styled(FormikField)`
   display: flex;
   flex-direction: column;
 
