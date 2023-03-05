@@ -1,6 +1,7 @@
 import { Formik, Form, ErrorMessage } from 'formik';
 import { nanoid } from 'nanoid';
 import { object, string, number } from 'yup';
+import PropTypes from 'prop-types';
 import { Field, Button } from './ContactForm.styled';
 
 export const ContactForm = ({ onSubmit }) => {
@@ -42,4 +43,8 @@ export const ContactForm = ({ onSubmit }) => {
       </Form>
     </Formik>
   );
+};
+
+ContactForm.PropType = {
+  onSubmit: PropTypes.func.isRequired,
 };
